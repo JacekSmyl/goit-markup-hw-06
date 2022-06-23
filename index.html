@@ -353,6 +353,18 @@
             </svg>
           </a>
         </div>
+        <div class="newsletter" >
+          <p class="newsletter__text">Zapisz się do newslettera </p>
+          <formn  name="signup_form" action="" method="post" >
+            <div class="newsletter__form">
+              <input  class="input-frame" type="text" name="username" placeholder="E-mail" />
+              <button class="btn__color" type="submit">Zapisz się 
+                <svg class="btn__color__icon" width="24" height="24">
+                <use href="./images/sprite2.svg#icon-send"></use>
+                </svg></button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -362,6 +374,48 @@
             <use href="./images/sprite-close.svg#icon-icon-close"></use>
           </svg>
         </button>
+        <form class="modal-form">
+    
+            <h3 class="modal__text">Zostaw swoje dane w formularzu poniżej</h3>
+     
+          <label class="modal__label" for="name">Imie </label>
+           <svg  class="modal__icon" width="12" height="12"><use href="./images/sprite2.svg#icon-item "></use>
+            </svg>
+            <input class="modal__input" type="text" id="name"  /> 
+           
+
+          <label class="modal__label" for="number">Telefon </label>
+          <svg class="modal__icon" width="13" height="13"><use href="./images/sprite2.svg#icon-phone "></use>
+            </svg>
+            <input  class="modal__input" type="text" id="number" />
+          
+          <label class="modal__label" for="Email">Email</label>
+            <svg class="modal__icon" width="13" height="13"><use href="./images/sprite2.svg#icon-message "></use>
+            </svg>
+            <input class="modal__input"type="text" id="Email "/>
+          <label class="modal__label" for="textarea">Komentarz
+            <textarea  class="modal__textarea" name="textarea"  placeholder="Wprowadź tekst"></textarea>
+          </label>
+          <label>
+            <input"  name="accept" type="checkbox"  required/>
+            <span  class="modal__checkbox"> 
+              Oświadczam iż akceptuję 
+              <a href="#" class="modal__link" >Regulamin </a> i
+              <a href="#" class="modal__link" >Politykę Prywatności. </a>
+            </span>
+          </label>
+          <div class="modal__btn">
+            <button class="modal__button" type="submit">
+            Wyślij
+            </button>
+          </div>
+      </div>
+
+
+      </form>
+      
+
+
       </div>
     </div>
     <script src="./js/modal.js"></script>
